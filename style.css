@@ -4,7 +4,7 @@
     font-size: 10px;
 }
 body {
-    background-color: #f9ecf9;
+    background-color: #fff;
 }
 h1 {
     display: flex;
@@ -13,16 +13,16 @@ h1 {
     color: #7a277b;
 }
 button {
-    color: #c344c4;
+    color: #fff;
     font-size: 3rem;
     background-color: #ecc5ed;
     padding: 1.5rem;
     letter-spacing: .3rem;
     border-radius: 25px;
     border: 5px solid #7a277b;
+    font-weight: 900;
 }
 button:hover{
-    color: #ecc5ed;
     background-color: #c344c4;
 }
 .btn-position{
@@ -34,4 +34,8 @@ button:hover{
     justify-content: center;
     height: 60vh;
     margin: 30px 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+img{
+    width: 100%
 }
