@@ -25,9 +25,6 @@ const game = {
             } else if (!guess) {
                 break
             }  
-            else {
-                break
-            }
         }
     },
     render: function () {
