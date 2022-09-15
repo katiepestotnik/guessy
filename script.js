@@ -41,6 +41,13 @@ const game = {
             }
     }
 }
-game.play()
+
+const play = () => {
+    location.reload()
+    game.play()
+}
+
+document.querySelector('.play-game').addEventListener('click', play)
+//game.play()
 
 
