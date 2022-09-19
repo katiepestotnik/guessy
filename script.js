@@ -10,7 +10,7 @@ const game = {
         this.secretNum = Math.floor(Math.random() * (this.biggestNum - this.smallestNum + 1)) + this.smallestNum
         let guess
         while (guess !== this.secretNum) {
-            let guess = this.getGuess()
+            guess = this.getGuess()
             this.render(guess)
             if(!guess)break
             if(guess === this.secretNum)break
@@ -32,11 +32,11 @@ const game = {
 
     },
     render: function (guess) {
-            if (guess < game.secretNum) {
+            if (guess < this.secretNum) {
                 alert(`${guess} is too low, try again`)
-            } else if (guess > game.secretNum) {
+            } else if (guess > this.secretNum) {
                 alert(`${guess} is too high, try again`)
-            } else if (guess === game.secretNum) {
+            } else if (guess === this.secretNum) {
                 alert(`${guess} is correct, you got it after ${this.prevGuesses.length} times.`)
             }
     }
